@@ -1,87 +1,55 @@
-# Project Title
+# Meter PZEM-004 + ESP8266 & Platform IoT Blynk App
 
-One Paragraph of project description goes here
+Integration of Electric Consumption Meter PZEM-004 of Peacefair and IoT Blynk Platform using Module ESP8266
 
-## Getting Started
+Intregracion de Medidor de Consumo Electrico PZEM-004 de Peacefair y Plataforma IoT Blynk utilizando Modulo ESP8266
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
+![alt text](http://pdacontrolen.com/wp-content/uploads/2018/03/Basic-Blynk-PZEM-004_part1-768x432.png "PZEM-004 ESP8266 Blynk")
 
 End with an example of getting some data out of the system or using it for a little demo
 
-## Running the tests
+## Materiales 
 
-Explain how to run the automated tests for this system
+* [ESP8266 12E NodeMCU](http://s.click.aliexpress.com/e/b6QNZfy) - Module Espressif
+* [PZEM 004 Peacefair with display](http://s.click.aliexpress.com/e/YNVrZjq) - Power Meter Serial TTL Comunication
+* [Meter PZEM 004T & Three phase meters](http://s.click.aliexpress.com/e/uBunmAm) - Power Meter Serial TTL Comunication
+* [Immersion heater / Resistance Water heater](http://s.click.aliexpress.com/e/b6iIYZ3) - Load AC 110VAC
 
-### Break down into end to end tests
+## Conexiones
+What things you need to install the software and how to install them
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
 
 ```
-Give an example
+   WeMos D1         Shield Feature
+  GPIO5  (D1) <----> I2C SCL
+  GPIO4  (D2) <----> I2C SDA
+  GPIO0  (D3) <----> WS2812 LEDS
+  GPIO2  (D4) <----> Push Button
+  GPIO16 (D0) <----> RESET (depending on bottom solder PAD position)
+
 ```
+![alt text](http://pdacontroles.com/wp-content/uploads/2018/03/Connection_pzem004_esp8266.png "Conexiones PZEM-004 ESP8266")
 
-## Deployment
 
-Add additional notes about how to deploy this on a live system
 
-## Built With
+## Montaje
+![alt text](http://pdacontroles.com/wp-content/uploads/2018/03/media_vista_blynk.jpg "PZEM-004 ESP8266 Blynk")
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
-## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+## Documentation 
+* Documentacion Completa del proyecto en  [Medidor PZEM-004 + ESP8266 & Plataforma IoT Blynk App](http://pdacontroles.com/medidor-pzem-004-esp8266-plataforma-iot-blynk-app/). 
+* Complete documentation of the project in [Meter PZEM-004 + ESP8266 & Platform IoT Blynk App ](http://pdacontrolen.com/meter-pzem-004-esp8266-platform-iot-blynk-app/). 
 
-## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+## Donaciones 
+Respalde este proyecto y otros  [PDAControl](http://pdacontrolen.com)  mediante [Paypal](https://www.paypal.me/pdacontrol) 
+[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/pdacontrol)
 
-## Authors
+## Mas sobre PDAControl
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* [PDAControl English](http://pdacontrolen.com). 
+* [PDAControl Español](http://pdacontroles.com). 
+* [PDAControl Youtube Channel](https://www.youtube.com/channel/UCv1D6zrC0ZL0PSgM6tdEpPg/videos). 
+* [Jhon_Control Twitter](https://twitter.com/Jhon_Control). 
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
